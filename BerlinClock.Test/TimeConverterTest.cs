@@ -1,4 +1,5 @@
-﻿using BerlinClock.Classes;
+﻿using System;
+using BerlinClock.Classes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BerlinClock.Test
