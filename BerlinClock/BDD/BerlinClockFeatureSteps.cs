@@ -9,17 +9,14 @@ namespace BerlinClock.BDD
     public class TheBerlinClockSteps
     {
         private ITimeConverter berlinClock = new TimeConverter();
-        private String theTime;
         private String convertedTime;
         
         [When(@"the time is ""(.*)""")]
         public void WhenTheTimeIs(string time)
         {
-            theTime = time;
-
             try
             {
-                convertedTime = berlinClock.ConvertTime(theTime);
+                convertedTime = berlinClock.ConvertTime(time);
             }
             catch (Exception e)
             {
