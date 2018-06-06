@@ -17,7 +17,7 @@ namespace BerlinClock.Classes
                 throw new ArgumentException("Not valid time to convert.");
             }
 
-            return string.Join(Environment.NewLine, parsers.Select(i => i.Parse(time)));
+            return string.Join("\n", parsers.Select(i => i.Parse(time)));
         }
 
         /// <summary>

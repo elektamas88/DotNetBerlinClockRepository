@@ -17,7 +17,7 @@ namespace BerlinClock.Classes.Parsers
             string firstRow = GetFirstRowLamps(minutes / MinuteMultiplier);
             string secondRow = GetSecondRowLamps(minutes % MinuteMultiplier);
 
-            return $"{firstRow}{Environment.NewLine}{secondRow}";
+            return $"{firstRow}\n{secondRow}";
         }
 
         private string GetFirstRowLamps(int lampIsOn)

@@ -49,3 +49,11 @@ RRRR
 OOOOOOOOOOO
 OOOO
 """
+
+Scenario: Invalid time
+When the time is "24:00:01"
+Then we get argument exception
+
+Scenario: Invalid file format
+When the time is "11:00"
+Then we get argument exception
